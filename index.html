@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+ <div id="contenedor" class="contenedor"> 
+<div id="productos" class="productos">
+    
+    <section >
+     <div id="lavandina" class="lavandina">
+        <H1>COMPRAR</H1>
+        <H1>LAVANDINA POR:</H1>
+        <br>
+        <div class="contiene1">
+            <br>
+            <a href="#lavandina2"><div class="botpl">
+           <h1>PRECIO</h1>     
+          <img src="precio1.png" class="ima1">
+          </div></a>
+          <div><br></div>
+          
+          <a href="#lavandina1"><div class="botpl">
+            <h1>LITRO</h1>
+          <img src="litro1.png" class="ima1"> 
+          </div></a> 
+        </div>
+        <br>
+        <div class="" >
+            <img src="retrocederh1.png" class="retroseder" onclick="mostrarFlotante()">
+        </div>
+    </div>
+    
+    
+    <div id="lavandina1" class="lavandina">
+    <!--litros lavandina-->
+        <div class="titul">
+        <h2>LAVANDINA</h2>
+        </div>
+
+    
+    
+        <div class="litros2">
+        <h2>litros</h2>
+        <input type="number" id="litrolav1" class="input2" placeholder=""> 
+        </div>
+
+        <div class="precio2">
+    <!--    <h2>precio</h2>-->
+        <input type="number" style="width:0px; height:1px;" id="preciolav1" disabled="off" class="input2" placeholder=""> 
+        </div>
+        
+   
+        <div id="contiene">
+        <button onclick="lav500ml()">500ml</button>
+        <button onclick="lav1000ml()">1000ml</button>
+        <button onclick="lav1500ml()">1500ml</button>
+        </div>
+        <button onclick="lav2000ml()">2000ml</button>
+        <button onclick="lav2500ml()">2500ml</button>
+
+        <div>
+        <button onclick="lav1ml()" class="num">1</button>
+        <button onclick="lav2ml()" class="num">2</button>
+        <button onclick="lav3ml()" class="num">3</button>
+        </div>
+        <div>
+        <button onclick="lav4ml()" class="num">4</button>
+        <button onclick="lav5ml()" class="num">5</button>
+        <button onclick="lav6ml()" class="num">6</button>
+        </div>
+        <div>
+        <button onclick="lav7ml()" class="num">7</button>
+        <button onclick="lav8ml()"class="num">8</button>
+        <button onclick="lav9ml()"class="num">9</button>
+        </div>
+        <diV>
+        <button onclick="lav0ml()"class="num">0</button>
+        <button onclick="lavdelml()"style="width:144px; height:70px">borrar</button>
+    
+        </diV>
+        <div class="" >
+        <a href="#lavandina">
+            <img src="retroseder.png" width="80px" onclick="ocultarbox()">
+        </a>
+         <a><img src="compra.png" width="123px" height="80px" onclick="fun12(); mostrarbox(); agregarAmigo();"></a>
+        </div>
+    </div>
+
+    <div id="lavandina2" class="lavandina" >
+        <!--precio lavandina-->
+        <div class="titul">
+        <h2>LAVANDINA</h2>
+        </div>
+        <div class="contiene">
+    
+        <div class="precio">
+        <h2>precio =$600 x 1000ml</h2>
+        <input type="number" id="preciolav" class="input2" placeholder=""> 
+        </div>
+
+    
+        <div class="litros">
+        <!--<h2>litros</h2>-->
+        <input style="width:0px; height:1px;" type="number" id="litrolav" disabled="off" class="input2" placeholde=""> 
+        </div>
+    
+   
+        <!--<div class="total">
+        <button  id="btn-mostrar" type="submit">TOTAL</button>
+        </div>-->
+        <div style="width:185px">
+        <button onclick="lav500()">$500</button>
+        <button onclick="lav1000()">$1000</button>
+        <button onclick="lav1500()">$1500</button>
+        </div>
+        <div>
+        <button onclick="lav2000()">$2000</button>
+        <button onclick="lav2500()">$2500</button>
+        </div>
+        <div>
+        <button onclick="lav1()" class="num">1</button>
+        <button onclick="lav2()" class="num">2</button>
+        <button onclick="lav3()" class="num">3</button>
+        </div>
+        <div>
+        <button onclick="lav4()" class="num">4</button>
+        <button onclick="lav5()" class="num">5</button>
+        <button onclick="lav6()" class="num">6</button>
+        </div>
+        <div>
+        <button onclick="lav7()" class="num">7</button>
+        <button onclick="lav8()"class="num">8</button>
+        <button onclick="lav9()"class="num">9</button>
+        </div>
+        <diV>
+        <button onclick="lav0()"class="num">0</button>
+        <button onclick="lavdel()"style="width:144px; height:70px"><--borrar</button>
+    
+        </diV>
+
+
+
+
+        <div class="" >
+        <a href="#lavandina">
+            <img src="retroseder.png" width="80px" onclick="ocultarbox()">
+        </a>
+         <a><img src="compra.png" width="123px" height="80px" onclick="fun1(); mostrarbox(); agregarAmigo();"></a>
+        </div>
+    </div>  
+    </section>
+
+    <!--detergente-->
+    <section>
+        <div id="detergente" class="detergente">
+        <H1>COMPRAR</H1>
+        <H1>DETERGENTE POR:</H1>
+        <br>
+        <div class="contiene1">
+            <br>
+            <a href="#detergente1"><div class="botpl">
+           <h1>PRECIO</h1>     
+          <img src="precio1.png" class="ima1">
+        </div></a>
+        
+          
+          <a href="#detergente2"><div class="botpl">
+            <h1>LITRO</h1>
+          <img src="litro1.png" class="ima1"> 
+          </div></a> 
+        </div>
+        <div class="" >
+            <img src="retrocederh1.png" class="retroseder" onclick="mostrarFlotante()">
+        </div>
+    </div>
+
+    <div id="detergente1" class="detergente">
+        <div class="titul">
+        <h2>COMPRAR DETERGENTE POR:</h2>
+        </div>
+
+        <div class="contiene">
+    
+        <div class="precio">
+        <h2>precio</h2>
+        <input type="number" id="preciodet" class="input2" placeholder=""> 
+        </div>
+        <div class="litros">
+      <!--  <h2>litros</h2>-->
+        <input type="number" style="width:0px; height:1px;" id="litrodet" disabled="off" class="input2" placeholder="1000ml = 1 litro"> 
+        </div>
+
+        </div>
+        <div >
+        <button onclick="det500()">$500</button>
+        <button onclick="det1000()">$1000</button>
+        <button onclick="det1500()">$1500</button>
+        </div>
+        <button onclick="det2000()">$2000</button>
+        <button onclick="det2500()">$2500</button>
+
+        <div>
+        <button onclick="det1()" class="num">1</button>
+        <button onclick="det2()" class="num">2</button>
+        <button onclick="det3()" class="num">3</button>
+        </div>
+        <div>
+        <button onclick="det4()" class="num">4</button>
+        <button onclick="det5()" class="num">5</button>
+        <button onclick="det6()" class="num">6</button>
+        </div>
+        <div>
+        <button onclick="det7()" class="num">7</button>
+        <button onclick="det8()"class="num">8</button>
+        <button onclick="det9()"class="num">9</button>
+        </div>
+        <diV>
+        <button onclick="det0()"class="num">0</button>
+        <button onclick="detdel()"style="width:144px; height:70px">borrar</button>
+        </div>
+        <div class="" >
+        <a href="#detergente">
+            <img src="retroseder.png" width="80px" onclick="ocultarbox()">
+        </a>
+         <a><img src="compra.png" width="123px" height="80px" onclick="fun2(); mostrarbox(); agregarAmigo();"></a>
+        </div>
+    </section>div>
+
+    
+    
+    <div id="detergente2" class="detergente">
+        
+        <div class="titul">
+        <h2>COMPRAR DETERGENTE POR:</h2>
+        </div>
+
+        <div class="contiene">    
+        <div class="litros2">
+        <h2>litros</h2>
+        <input type="number" id="litrodet1" class="input2" placeholder=""> 
+        </div>
+
+        <div class="precio2">
+       <!-- <h2>precio</h2>-->
+        <input type="number" style="width:0px; height:1px;"  id="preciodet1" disabled="off" class="input2" placeholder=""> 
+        </div>
+        </div>
+        <!--<div class="total">
+        <button onclick="fun21()" id="btn-mostrar" type="submit">TOTAL2</button>
+        </div>-->
+        <div id="contiene">
+        <button onclick="det500ml()">500ml</button>
+        <button onclick="det1000ml()">1000ml</button>
+        <button onclick="det1500ml()">1500ml</button>
+        </div>
+        <button onclick="det2000ml()">2000ml</button>
+        <button onclick="det2500ml()">2500ml</button>
+
+        <div>
+        <button onclick="det1ml()" class="num">1</button>
+        <button onclick="det2ml()" class="num">2</button>
+        <button onclick="det3ml()" class="num">3</button>
+        </div>
+        <div>
+        <button onclick="det4ml()" class="num">4</button>
+        <button onclick="det5ml()" class="num">5</button>
+        <button onclick="det6ml()" class="num">6</button>
+        </div>
+        <div>
+        <button onclick="det7ml()" class="num">7</button>
+        <button onclick="det8ml()"class="num">8</button>
+        <button onclick="det9ml()"class="num">9</button>
+        </div>
+        <diV>
+        <button onclick="det0ml()"class="num">0</button>
+        <button onclick="detdelml()"style="width:144px; height:70px">borrar</button>
+    
+        </diV>
+        <div class="" >
+        <a href="#detergente">
+            <img src="retroseder.png" width="80px" onclick="ocultarbox()">
+        </a>
+         <a>
+        <img src="compra.png" width="123px" height="80px" onclick="fun21(); mostrarbox(); agregarAmigo();">
+        </a>
+        </div>
+    </div>    
+
+    
+  <!--desodorante-->
+<section >
+    <div id="desodorante" class="desodorante">
+        <H1>COMPRAR</H1>
+        <H1>DESODORANTE POR:</H1>
+        <br>
+        <div class="contiene1">
+            <br>
+            <a href="#desodorante1"><div class="botpl">
+           <h1>PRECIO</h1>     
+          <img src="precio1.png" class="ima1">
+          </div></a>
+          <div><br></div>
+          
+          <a href="#desodorante2"><div class="botpl">
+            <h1>LITRO</h1>
+          <img src="litro1.png" class="ima1"> 
+          </div></a> 
+        </div>
+        <br>
+        <div class="" >
+            <img src="retrocederh1.png" class="retroseder" onclick="mostrarFlotante()">
+        </div>
+    </div>
+
+    <div id="desodorante1" class="desodorante">
+        <div class="titul">
+        <h2>DESODORANTE</h2>
+        </div>
+
+        <div class="contiene">
+    
+        <div class="precio">
+        <h2>precio</h2>
+        <input type="number" id="preciodes" class="input2" placeholder=""> 
+        </div>
+        <div class="litros">
+        <input type="number" id="litrodes" style="width: 0px; height: 1px;" disabled="off" class="input2" placeholder=""> 
+        </div>
+
+        </div>
+   
+    
+        <div >
+        <button onclick="des500()">$500</button>
+        <button onclick="des1000()">$1000</button>
+        <button onclick="des1500()">$1500</button>
+        </div>
+        <button onclick="des2000()">$2000</button>
+        <button onclick="des2500()">$2500</button>
+
+        <div>
+        <button onclick="des1()" class="num">1</button>
+        <button onclick="des2()" class="num">2</button>
+        <button onclick="des3()" class="num">3</button>
+        </div>
+        <div>
+        <button onclick="des4()" class="num">4</button>
+        <button onclick="des5()" class="num">5</button>
+        <button onclick="des6()" class="num">6</button>
+        </div>
+        <div>
+        <button onclick="des7()" class="num">7</button>
+        <button onclick="des8()"class="num">8</button>
+        <button onclick="des9()"class="num">9</button>
+        </div>
+        <diV>
+        <button onclick="des0()"class="num">0</button>
+        <button onclick="desdel()"style="width:144px; height:70px"> borrar</button>
+        </diV> 
+        <div class="" >
+        <a href="#desodorante">
+            <img src="retroseder.png" width="80px" onclick="ocultarbox()">
+        </a>
+         <a><img src="compra.png" width="123px" height="80px" onclick="fun3(); mostrarbox(); agregarAmigo();"></a>
+        </div>
+
+    </diV>
+
+
+    <div id="desodorante2" class="desodorante">
+        <div class="contiene">
+        <div class="litros">
+        <h2>litros</h2>
+        <input type="number" id="litrodes1"  class="input2" placeholder=""> 
+        </div>
+        <div class="precio">
+        <input type="number" style="width: 0px; height: 1px;" id="preciodes1" class="input2" disabled="off" placeholder=""> 
+        </div>
+
+        </div>
+   
+        <div id="contiene">
+        <button onclick="des500ml()">500ml</button>
+        <button onclick="des1000ml()">1000ml</button>
+        <button onclick="des1500ml()">1500ml</button>
+        </div>
+        <button onclick="des2000ml()">2000ml</button>
+        <button onclick="des2500ml()">2500ml</button>
+
+        <div>
+        <button onclick="des1ml()" class="num">1</button>
+        <button onclick="des2ml()" class="num">2</button>
+        <button onclick="des3ml()" class="num">3</button>
+        </div>
+        <div>
+        <button onclick="desml()" class="num">4</button>
+        <button onclick="des5ml()" class="num">5</button>
+        <button onclick="des6ml()" class="num">6</button>
+        </div>
+        <div>
+        <button onclick="des7ml()" class="num">7</button>
+        <button onclick="des8ml()"class="num">8</button>
+        <button onclick="des9ml()"class="num">9</button>
+        </div>
+        <diV>
+        <button onclick="des0ml()"class="num">0</button>
+        <button onclick="desdelml()"style="width:144px; height:70px">borrar</button>
+        </diV>
+        <div class="" >
+        <a href="#desodorante">
+            <img src="retroseder.png" width="80px" onclick="ocultarbox()">
+        </a>
+         <a><img src="compra.png" width="123px" height="80px" onclick="fun31(); mostrarbox(); agregarAmigo();"></a>
+        </div>
+
+
+    </section>
+    
+    <!--jabon-->
+    <section>
+    <div id="jabon" class="jabon">
+        <H1>COMPRAR</H1>
+        <H1>JABON POR:</H1>
+        <br>
+        <div class="contiene1">
+            <br>
+            <a href="#jabon1"><div class="botpl">
+           <h1>PRECIO</h1>     
+          <img src="precio1.png" class="ima1">
+          </div></a>
+          <div><br></div>
+          
+          <a href="#jabon2"><div class="botpl">
+            <h1>LITRO</h1>
+          <img src="litro1.png" class="ima1"> 
+          </div></a> 
+        </div>
+        <br>
+        <div class="" >
+            <img src="retrocederh1.png" class="retroseder" onclick="mostrarFlotante()">
+        </div>
+    </div>
+
+    <div id="jabon1" class="jabon">
+        <div class="titul">
+        <h2>JABON ROPA</h2>
+        </div>
+
+        <div class="contiene">
+    
+        <div class="precio">
+        <h2>precio</h2>
+        <input type="number" id="preciojab" class="input2" placeholder=""> 
+        </div>
+
+        <div class="litros">
+        <input type="number" id="litrojab" style="width: 0px; height: 1px;" disabled="off" class="input2" placeholder=""> 
+        </div>
+
+        </div>
+
+         <div >
+        <button onclick="jab500()">$500</button>
+        <button onclick="jab1000()">$1000</button>
+        <button onclick="jab1500()">$1500</button>
+        </div>
+        <button onclick="jab2000()">$2000</button>
+        <button onclick="jab2500()">$2500</button>
+        <div>
+        <button onclick="jab1()" class="num">1</button>
+        <button onclick="jab2()" class="num">2</button>
+        <button onclick="jab3()" class="num">3</button>
+        </div>
+        <div>
+        <button onclick="jab4()" class="num">4</button>
+        <button onclick="jab5()" class="num">5</button>
+        <button onclick="jab6()" class="num">6</button>
+        </div>
+        <div>
+        <button onclick="jab7()" class="num">7</button>
+        <button onclick="jab8()"class="num">8</button>
+        <button onclick="jab9()"class="num">9</button>
+        </div>
+        <diV>
+        <button onclick="jab0()"class="num">0</button>
+        <button onclick="jabdel()"style="width:144px; height:70px"><--borrar</button>
+        </diV>
+        <div class="" >
+        <a href="#jabon">
+            <img src="retroseder.png" width="80px" onclick="ocultarbox()">
+        </a>
+         <a><img src="compra.png" width="123px" height="80px" onclick="fun4(); mostrarbox(); agregarAmigo();"></a>
+        </div>
+    </div>
+
+    <div id="jabon2" class="jabon">
+        <div class="contiene">
+        <div class="litros">
+        <h2>litros</h2>
+        <input type="number" id="litrojab1"  class="input2" placeholder="1000 = 1 litro"> 
+        </div>
+        <div class="precio">
+        <input type="number" style="width: 0pz; height: 1px;" id="preciojab1" class="input2" disabled="off" placeholder="600 x 1 litro"> 
+        </div>
+
+        </div>
+        <div>
+        <button onclick="jab500ml()">500ml</button>
+        <button onclick="jab1000ml()">1000ml</button>
+        <button onclick="jab1500ml()">1500ml</button>
+        </div>
+        <button onclick="jab2000ml()">2000ml</button>
+        <button onclick="jab2500ml()">2500ml</button>
+        <div>
+        <button onclick="jab1ml()" class="num">1</button>
+        <button onclick="jab2ml()" class="num">2</button>
+        <button onclick="jab3ml()" class="num">3</button>
+        </div>
+        <div>
+        <button onclick="jab4ml()" class="num">4</button>
+        <button onclick="jab5ml()" class="num">5</button>
+        <button onclick="jab6ml()" class="num">6</button>
+        </div>
+        <div>
+        <button onclick="jab7ml()" class="num">7</button>
+        <button onclick="jab8ml()"class="num">8</button>
+        <button onclick="jab9ml()"class="num">9</button>
+        </div>
+        <diV>
+        <button onclick="jab0ml()"class="num">0</button>
+        <button onclick="jabdelml()"style="width:144px; height:70px"><--borrar</button>
+        </diV>
+         <div class="" >
+        <a href="#jabon">
+            <img src="retroseder.png" width="80px" onclick="ocultarbox()">
+        </a>
+         <a><img src="compra.png" width="123px" height="80px" onclick="fun41(); mostrarbox(); agregarAmigo();"></a>
+        </div>
+    </div>
+    </section>
+
+    <!--suavizante-->
+    <section >
+    <div id="suavizante" class="suavizante">
+        <H1>COMPRAR</H1>
+        <H1>SUAVIZANTE POR:</H1>
+        <br>
+        <div class="contiene1">
+            <br>
+            <a href="#suavizante1"><div class="botpl">
+            <h1>PRECIO</h1>     
+            <img src="precio1.png" class="ima1">
+            </div></a>
+                  
+            <a href="#suavizante2"><div class="botpl">
+            <h1>LITRO</h1>
+            <img src="litro1.png" class="ima1"> 
+            </div></a> 
+        </div>
+            <div class="" >
+            <img src="retrocederh1.png" class="retroseder" onclick="mostrarFlotante()">
+            </div>
+    </div>
+
+    <div id="suavizante1" class="suavizante">
+        <div class="titul">
+        <h2>SUAVIZANTE</h2>
+        </div>
+
+        <div class="contiene">
+    
+        <div class="precio">
+        <h2>precio</h2>
+        <input type="number"  id="preciosua" class="input2" > 
+        </div>
+
+        <div class="litros">        
+        <input type="number" style="width: 0px; height: 1px;" id="litrosua" disabled="off" class="input2"> 
+        </div>
+        </div>
+   
+        <div >
+        <button onclick="sua500()">$500</button>
+        <button onclick="sua1000()">$1000</button>
+        <button onclick="sua1500()">$1500</button>
+        </div>
+        <button onclick="sua2000()">$2000</button>
+        <button onclick="sua2500()">$2500</button>
+        <div>
+        <button onclick="sua1()" class="num">1</button>
+        <button onclick="sua2()" class="num">2</button>
+        <button onclick="sua3()" class="num">3</button>
+        </div>
+        <div>
+        <button onclick="sua4()" class="num">4</button>
+        <button onclick="sua5()" class="num">5</button>
+        <button onclick="sua6()" class="num">6</button>
+        </div>
+        <div>
+        <button onclick="sua7()" class="num">7</button>
+        <button onclick="sua8()"class="num">8</button>
+        <button onclick="sua9()"class="num">9</button>
+        </div>
+        <diV>
+        <button onclick="sua0()"class="num">0</button>
+        <button onclick="suadel()"style="width:144px; height:70px">borrar</button>
+        </diV>
+        
+        <div class="" >
+        <a href="#suavizante">
+            <img src="retroseder.png" width="80px" onclick="ocultarbox()">
+        </a>
+         <a><img src="compra.png" width="123px" height="80px" onclick="fun5(); mostrarbox(); agregarAmigo();"></a>
+        </div>
+    </div>
+
+    <div id="suavizante2" class="suavizante">
+        <div class="contiene">
+    
+        <div class="litros">
+        <h2>litros</h2>
+        <input type="number" id="litrosua1"  class="input2" placeholder=""> 
+        </div>
+        <div class="precio">
+        <input type="number" id="preciosua1" style="width: 0px; height: 1px;" class="input2" disabled="off" placeholder=""> 
+        </div>
+
+        </div>
+   
+    <div class="total">
+        <button onclick="fun51()" id="btn-mostrar" type="submit">TOTAL</button>
+    </div>
+         <div id="contiene">
+      <button onclick="sua500ml()">500ml</button>
+    <button onclick="sua1000ml()">1000ml</button>
+    <button onclick="sua1500ml()">1500ml</button>
+    </div>
+    <button onclick="sua2000ml()">2000ml</button>
+    <button onclick="sua2500ml()">2500ml</button>
+    <div>
+    <button onclick="sua1ml()" class="num">1</button>
+    <button onclick="sua2ml()" class="num">2</button>
+    <button onclick="sua3ml()" class="num">3</button>
+    </div>
+    <div>
+    <button onclick="sua4ml()" class="num">4</button>
+    <button onclick="sua5ml()" class="num">5</button>
+    <button onclick="sua6ml()" class="num">6</button>
+    </div>
+    <div>
+        <button onclick="sua7ml()" class="num">7</button>
+    <button onclick="sua8ml()"class="num">8</button>
+    <button onclick="sua9ml()"class="num">9</button>
+    </div>
+    <diV>
+        <button onclick="sua0ml()"class="num">0</button>
+    <button onclick="suadelml()"style="width:144px; height:70px">borrar</button>
+    </diV>
+    
+        <div class="" >
+        <a href="#suavizante">
+            <img src="retroseder.png" width="80px" onclick="ocultarbox()">
+        </a>
+         <a><img src="compra.png" width="123px" height="80px" onclick="fun51(); mostrarbox(); agregarAmigo();"></a>
+        </div>
+
+    </div>
+</section>
+    
+    <!--desengrasante-->
+    <section id="desengrasante" class="desengrasante">
+    <div class="titul">
+        <h2>DESENGRASANTE</h2>
+    </div>
+
+    <div class="contiene">
+    
+    <div class="precio">
+        <h2>precio</h2>
+        <input type="number" id="preciodese" class="input2" placeholder="600 x 1 litro"> 
+    </div>
+
+    <div class="litros">
+        <h2>litros</h2>
+        <input type="number" id="litrodese" disabled="off" class="input2" placeholder="1000 = 1 litro"> 
+    </div>
+
+    </div>
+   
+    <div class="total">
+        <button onclick="fun6()" id="btn-mostrar" type="submit">TOTAL</button>
+    </div>
+    <div >
+     <button onclick="dese500()">$500</button>
+    <button onclick="dese1000()">$1000</button>
+    <button onclick="dese1500()">$1500</button>
+    </div>
+    <button onclick="dese2000()">$2000</button>
+    <button onclick="dese2500()">$2500</button>
+    <div>
+    <button onclick="lav1()" class="num">1</button>
+    <button onclick="lav2()" class="num">2</button>
+    <button onclick="lav3()" class="num">3</button>
+    </div>
+    <div>
+    <button onclick="lav4()" class="num">4</button>
+    <button onclick="lav5()" class="num">5</button>
+    <button onclick="lav6()" class="num">6</button>
+    </div>
+    <div>
+        <button onclick="lav7()" class="num">7</button>
+    <button onclick="lav8()"class="num">8</button>
+    <button onclick="lav9()"class="num">9</button>
+    </div>
+    <diV>
+        <button onclick="lav0()"class="num">0</button>
+    <button onclick="lavdel()"style="width:144px; height:70px"><--borrar</button>
+    
+    </diV>
+
+    <div class="contiene">
+         <div class="litros">
+        <h2>litros</h2>
+        <input type="number" id="litrodese1"  class="input2" placeholder="1000 = 1 litro"> 
+    </div>
+    
+    <div class="precio">
+        <h2>precio</h2>
+        <input type="number" id="preciodese1" class="input2" disabled="off" placeholder="600 x 1 litro"> 
+    </div>
+
+   
+
+    </div>
+   
+    <div class="total">
+        <button onclick="fun61()" id="btn-mostrar" type="submit">TOTAL</button>
+    </div>
+          <div id="contiene">
+      <button onclick="dese500ml()">500ml</button>
+    <button onclick="dese1000ml()">1000ml</button>
+    <button onclick="dese1500ml()">1500ml</button>
+    </div>
+    <button onclick="dese2000ml()">2000ml</button>
+    <button onclick="dese2500ml()">2500ml</button>
+    <div>
+    <button onclick="lav1()" class="num">1</button>
+    <button onclick="lav2()" class="num">2</button>
+    <button onclick="lav3()" class="num">3</button>
+    </div>
+    <div>
+    <button onclick="lav4()" class="num">4</button>
+    <button onclick="lav5()" class="num">5</button>
+    <button onclick="lav6()" class="num">6</button>
+    </div>
+    <div>
+        <button onclick="lav7()" class="num">7</button>
+    <button onclick="lav8()"class="num">8</button>
+    <button onclick="lav9()"class="num">9</button>
+    </div>
+    <diV>
+        <button onclick="lav0()"class="num">0</button>
+    <button onclick="lavdel()"style="width:144px; height:70px"><--borrar</button>
+    
+    </diV>    
+</section>
+
+
+
+
+
+    <div id="profin" class="fin">  
+    <h1 class="muestra" id="pmostrar"></h1>
+    <div>
+   
+    <input type="text" id="mensaje1" class="input" placeholder=""> 
+
+    </div>
+    </div>
+</div>
+
+<div id="boxmenu" class="boxmenu">
+    
+    <div>
+    <div>
+    <a href="#lavandina" onclick="ocultarFlotante()"  class="original-button">LAVANDINA</a>
+    </div>
+    <div class="original-button" >
+    <a href="#detergente" onclick="ocultarFlotante()"   class="original-button">DETERGENTE</a>
+    </div>
+    <div >
+    <a href="#desodorante" onclick="ocultarFlotante()"  class="original-button">DESODORANTE</a>
+    </div>
+    <div >
+    <a href="#jabon" onclick="ocultarFlotante()"  class="original-button">JABON ROPA</a>
+        </div>
+        <div>
+    <a href="#suavizante" onclick="ocultarFlotante()"  class="original-button">SUAVIZANTE</a>
+            </div>
+            <div >
+    <a href="#desengrasante" onclick="ocultarFlotante()"  class="original-button">DESENGRASANTE</a>
+            </div>
+            </div>
+</div>
+ </div>
+    <!--array.whatsapp-->
+    <main class="main-content">
+        
+        
+        <section class="box" id="box">
+            <h2 class="section-title">organiza para enviar</h2>
+            <div class="input-wrapper">
+                <!-- --input agregar amigos-- -->
+                <input type="text" id="amigo" style="width: 209px"  class="input-name" placeholder="">
+                <!-- --boton agregar amigo-- -->
+                <button class="button-add" onclick="agregarAmigo()">Añadira a la lista</button>
+            </div>
+           <!-- --lista donde apareseran los amigos-- -->
+             <ul id="listaAmigos" class="name-list" style="height: 350px;" aria-labelledby="listaAmigos" role="list"></ul>
+                <!-- --aprese el amigo secreto-- -->
+            <ul id="resultado" class="result-list" aria-live="polite"></ul>
+                <!-- --boton donde genera un amigo secreto-- -->
+                
+
+                <div class="button-container">
+                
+                
+            </div>
+
+<div class="contenedor">
+
+    <a href=""><img src="whatsapp.png" style="width:150px" onclick="joinn(); pato()"></a>
+    <br>
+    <a><img src="seguircomprando.png" style="width:150px" onclick="mostrarFlotante(); ocultarbox()"></a>
+            <H1 id="pmo"></H1>
+            <input type="text" id="mensaje" style="width: 0px; height: 1px" placeholder="">
+    <a id="enviarWhats" href="#" target="_blank" onclick="pato()"> </a>
+</div>
+<div class="botpl" >
+            <img src="retroseder.png" class="retroseder" onclick="ocultarbox()">
+        
+        </div>
+              
+</section>
+    </main>
+    <script src="app.js"></script>   
+
+</body>
+</html>
