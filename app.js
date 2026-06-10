@@ -16,7 +16,7 @@ function fun1(){
     document.querySelector("#pmostrar").innerHTML="LAVANDINA_$"+ precio +"="+litros+"ml";
     
   
-    document.getElementById("amigo").value = "LAVANDINA $"+ precio +" son "+ litros+ "ml";
+    document.getElementById("amigo").value = "LAVANDINA_$"+ precio +"="+ litros+ "ml";
     document.getElementById("mensaje1").value = precio+" "+litros;
 }
 function lav500(){
@@ -540,7 +540,7 @@ function fun5(){
     document.querySelector("#pmostrar").innerHTML="suabisante $"+ precio +" x "+litros;
     
   
-    document.getElementById("amigo").value = "SUAVIZANTE $"+ precio +" son "+ litros+"ml";
+    document.getElementById("amigo").value = "SUAVIZANTE_$"+ precio +"="+ litros+"ml";
     document.getElementById("mensaje1").value = precio+" "+litros;
 }
 function sua500(){
@@ -603,7 +603,7 @@ function fun51(){
     document.querySelector("#pmostrar").innerHTML="suabisante $"+ precio +" x "+litros;
     
   
-    document.getElementById("amigo").value = "SUAVIZANTE "+ litros +"ml son $"+ precio;
+    document.getElementById("amigo").value = "SUAVIZANTE_"+ litros +"ml=$"+ precio;
     document.getElementById("mensaje1").value = precio+" "+litros;
 }
 function sua500ml(){
@@ -664,7 +664,7 @@ function fun6(){
     let litros = document.querySelector("#litrodese").value;
 
     
-    document.querySelector("#pmostrar").innerHTML="DESENGRASANTE $"+ precio +" x "+litros+ "ml";
+    document.querySelector("#pmostrar").innerHTML="DESENGRASANTE_$"+ precio +"="+litros+ "ml";
     
   
     document.getElementById("amigo").value = "desengrasante $"+ precio +" son "+ litros;
@@ -697,7 +697,7 @@ function fun61(){
     document.querySelector("#pmostrar").innerHTML="desengrasante "+ litros +"ml son $"+precio;
     
   
-    document.getElementById("amigo").value = "DESENGRASANTE "+ litros+"ml son $"+ precio;
+    document.getElementById("amigo").value = "DESENGRASANTE_"+ litros+"ml=$"+ precio;
     document.getElementById("mensaje1").value = precio+" "+litros;
 }
 function dese500ml(){
@@ -819,7 +819,7 @@ function sortearAmigo() {
         document.getElementById("mensaje").value = amigos.join();
 }   
 function joinn(){
-    let rest = amigos.join();
+    let rest = amigos.join(" ");
     document.getElementById('mensaje').value =rest;
     console.log('listado'+ rest);
 }
