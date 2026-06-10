@@ -281,7 +281,7 @@ function fun3(){
     let litros = document.querySelector("#litrodes").value;
 
     
-    document.querySelector("#pmostrar").innerHTML="desodorante $"+ precio +" x "+litros;
+    document.querySelector("#pmostrar").innerHTML="DESODORANTE_$"+ precio +"="+litros;
     
   
     document.getElementById("amigo").value = "DESODORANTE_$"+ precio +"="+ litros +"ml";
@@ -347,7 +347,7 @@ function fun31(){
     document.querySelector("#pmostrar").innerHTML="DESODORANTE_ "+ litros +"ml=$"+ precio;
     
   
-    document.getElementById("amigo").value = "desodorante "+ litros +"ml son $"+ precio;
+    document.getElementById("amigo").value = "DESODORANTE_"+ litros +"ml=$"+ precio;
     document.getElementById("mensaje1").value = precio+" "+litros;
 }
 function des500ml(){
@@ -468,9 +468,9 @@ function fun41(){
     
    if(document.getElementById("preciojab1").value= "1")
    document.getElementById("preciojab1").value = ((document.getElementById("litrojab1").value)*(0.8)).toFixed(0); 
-
+    
     let precio = document.querySelector("#preciojab1").value;
-
+    let litros = document.querySelector("#litrojab1").value;
     
     document.querySelector("#pmostrar").innerHTML="JABON ROPA $"+ precio +" x "+litros;
     
@@ -531,7 +531,7 @@ function jabdelml(){
 function fun5(){
     
    if(document.getElementById("litrosua").value= "1")
-   document.getElementById("litrosua").value = ((document.getElementById("preciosua").value)*(1.25)).toFixed(1); 
+   document.getElementById("litrosua").value = ((document.getElementById("preciosua").value)*(1.25)).toFixed(0); 
 
     let precio = document.querySelector("#preciosua").value;
     let litros = document.querySelector("#litrosua").value;
@@ -667,7 +667,7 @@ function fun6(){
     document.querySelector("#pmostrar").innerHTML="DESENGRASANTE_$"+ precio +"="+litros+ "ml";
     
   
-    document.getElementById("amigo").value = "desengrasante $"+ precio +" son "+ litros;
+    document.getElementById("amigo").value = "DESENGRASANTE_$"+ precio +"="+ litros+"ml";
     document.getElementById("mensaje1").value = precio+" "+litros;
 }
 function dese500(){
