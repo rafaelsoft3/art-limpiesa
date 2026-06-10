@@ -685,6 +685,40 @@ function dese2000(){
 function dese2500(){
     document.getElementById("preciodese").value = "2500";
 }
+function dese1(){
+    document.getElementById("preciodese").value += "1";
+}
+function dese2(){
+    document.getElementById("preciodese").value += "2";
+}
+function dese3(){
+    document.getElementById("preciodese").value += "3";
+}
+function dese4(){
+    document.getElementById("preciodese").value += "4";
+}
+function dese5(){
+    document.getElementById("preciodese").value += "5";
+}
+function dese6(){
+    document.getElementById("preciodese").value += "6";
+}
+function dese7(){
+    document.getElementById("preciodese").value += "7";
+}
+function dese8(){
+    document.getElementById("preciodese").value += "8";
+}
+function dese9(){
+    document.getElementById("preciodese").value += "9";
+}
+function dese0(){
+    document.getElementById("preciodese").value += "0";
+}
+function desedel(){
+    document.getElementById("preciodese").value = "";
+}
+
 function fun61(){
     
    if(document.getElementById("preciodese1").value= "1")
@@ -714,6 +748,39 @@ function dese2000ml(){
 }
 function dese2500ml(){
     document.getElementById("litrodese1").value = "2500";
+}
+function dese1ml(){
+    document.getElementById("litrodese1").value += "1";
+}
+function dese2ml(){
+    document.getElementById("litrodese1").value += "2";
+}
+function dese3ml(){
+    document.getElementById("litrodese1").value += "3";
+}
+function dese4ml(){
+    document.getElementById("litrodese1").value += "4";
+}
+function dese5ml(){
+    document.getElementById("litrodese1").value += "5";
+}
+function dese6ml(){
+    document.getElementById("litrodese1").value += "6";
+}
+function dese7ml(){
+    document.getElementById("litrodese1").value += "7";
+}
+function dese8ml(){
+    document.getElementById("litrodese1").value += "8";
+}
+function dese9ml(){
+    document.getElementById("litrodese1").value += "9";
+}
+function dese0ml(){
+    document.getElementById("litrodese1").value += "0";
+}
+function desedelml(){
+    document.getElementById("litrodese1").value = "";
 }
 
 //array.whatsapp
