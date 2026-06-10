@@ -13,7 +13,7 @@ function fun1(){
     document.getElementById("preciolav").value = disabled="off";
 
     
-    document.querySelector("#pmostrar").innerHTML="LAVANDINA $"+ precio +" x "+litros;
+    document.querySelector("#pmostrar").innerHTML="LAVANDINA_$"+ precio +"="+litros+"ml";
     
   
     document.getElementById("amigo").value = "LAVANDINA $"+ precio +" son "+ litros+ "ml";
@@ -86,7 +86,7 @@ function fun12(){
     document.querySelector("#pmostrar").innerHTML="LAVANDINA $"+ precio +" x "+litros;
     
   
-    document.getElementById("amigo").value = "LAVANDINA "+ litros +"ml son $"+ precio;
+    document.getElementById("amigo").value = "LAVANDINA_"+ litros +"ml=$"+ precio;
     document.getElementById("mensaje1").value = precio+" "+litros;
 }
 function lav500ml(){
@@ -156,7 +156,7 @@ function fun2(){
     document.querySelector("#pmostrar").innerHTML="detergente $"+ precio +" x "+litros;
     
   
-    document.getElementById("amigo").value = "detergente $"+ precio +" son "+ litros +"ml";
+    document.getElementById("amigo").value = "DETERGENTE_$"+ precio +"="+ litros +"ml";
     document.getElementById("mensaje1").value = precio+" "+litros;
 }
 function det500(){
@@ -219,7 +219,7 @@ function fun21(){
     document.querySelector("#pmostrar").innerHTML="detergente $"+ precio +" x "+litros;
     
   
-    document.getElementById("amigo").value = "detergente "+ litros +"ml son $"+ precio;
+    document.getElementById("amigo").value = "DETERGENTE_ "+ litros +"ml=$"+ precio;
     document.getElementById("mensaje1").value = precio+" "+litros;
 }
 function det500ml(){
@@ -284,7 +284,7 @@ function fun3(){
     document.querySelector("#pmostrar").innerHTML="desodorante $"+ precio +" x "+litros;
     
   
-    document.getElementById("amigo").value = "desodorante $"+ precio +" son "+ litros +"ml";
+    document.getElementById("amigo").value = "DESODORANTE_$"+ precio +"="+ litros +"ml";
     document.getElementById("mensaje1").value = precio+" "+litros;
 }
 function des500(){
@@ -344,7 +344,7 @@ function fun31(){
     let litros = document.querySelector("#litrodes1").value;
 
     
-    document.querySelector("#pmostrar").innerHTML="desodorante "+ litros +"ml son $"+ precio;
+    document.querySelector("#pmostrar").innerHTML="DESODORANTE_ "+ litros +"ml=$"+ precio;
     
   
     document.getElementById("amigo").value = "desodorante "+ litros +"ml son $"+ precio;
@@ -412,7 +412,7 @@ function fun4(){
     document.querySelector("#pmostrar").innerHTML="jabon ropa $"+ precio +" x "+litros;
     
   
-    document.getElementById("amigo").value = "jabon ropa $"+ precio +" son "+ litros+"ml";
+    document.getElementById("amigo").value = "JABON_ROPA_$"+ precio +"="+ litros+"ml";
     document.getElementById("mensaje1").value = precio+" "+litros;
 }
 function jab500(){
@@ -470,13 +470,12 @@ function fun41(){
    document.getElementById("preciojab1").value = ((document.getElementById("litrojab1").value)*(0.8)).toFixed(0); 
 
     let precio = document.querySelector("#preciojab1").value;
-    let litros = document.querySelector("#litrojab1").value;
 
     
-    document.querySelector("#pmostrar").innerHTML="jabon ropa $"+ precio +" x "+litros;
+    document.querySelector("#pmostrar").innerHTML="JABON ROPA $"+ precio +" x "+litros;
     
   
-    document.getElementById("amigo").value = "jabon "+ litros +"ml son $"+ precio;
+    document.getElementById("amigo").value = "JABON_ROPA_"+ litros +"ml=$"+ precio;
     document.getElementById("mensaje1").value = precio+" "+litros;
 }
 
@@ -541,7 +540,7 @@ function fun5(){
     document.querySelector("#pmostrar").innerHTML="suabisante $"+ precio +" x "+litros;
     
   
-    document.getElementById("amigo").value = "suabizante $"+ precio +" son "+ litros+"ml";
+    document.getElementById("amigo").value = "SUAVIZANTE $"+ precio +" son "+ litros+"ml";
     document.getElementById("mensaje1").value = precio+" "+litros;
 }
 function sua500(){
@@ -590,7 +589,7 @@ function sua0(){
     document.getElementById("preciosua").value += "0";
 }
 function suadel(){
-    document.getElementById("preciosua").value += "";
+    document.getElementById("preciosua").value = "";
 }
 function fun51(){
     
@@ -604,7 +603,7 @@ function fun51(){
     document.querySelector("#pmostrar").innerHTML="suabisante $"+ precio +" x "+litros;
     
   
-    document.getElementById("amigo").value = "suabizante $"+ precio +" son "+ litros;
+    document.getElementById("amigo").value = "SUAVIZANTE "+ litros +"ml son $"+ precio;
     document.getElementById("mensaje1").value = precio+" "+litros;
 }
 function sua500ml(){
@@ -623,34 +622,34 @@ function sua2500ml(){
     document.getElementById("litrosua1").value = "2500";
 }
 function sua1ml(){
-    document.getElementById("litrosua1").value = "1";
+    document.getElementById("litrosua1").value += "1";
 }
 function sua2ml(){
-    document.getElementById("litrosua1").value = "2";
+    document.getElementById("litrosua1").value += "2";
 }
 function sua3ml(){
-    document.getElementById("litrosua1").value = "3";
+    document.getElementById("litrosua1").value += "3";
 }
 function sua4ml(){
-    document.getElementById("litrosua1").value = "4";
+    document.getElementById("litrosua1").value += "4";
 }
 function sua5ml(){
-    document.getElementById("litrosua1").value = "5";
+    document.getElementById("litrosua1").value += "5";
 }
 function sua6ml(){
-    document.getElementById("litrosua1").value = "6";
+    document.getElementById("litrosua1").value += "6";
 }
 function sua7ml(){
-    document.getElementById("litrosua1").value = "7";
+    document.getElementById("litrosua1").value += "7";
 }
 function sua8ml(){
-    document.getElementById("litrosua1").value = "8";
+    document.getElementById("litrosua1").value += "8";
 }
 function sua9ml(){
-    document.getElementById("litrosua1").value = "9";
+    document.getElementById("litrosua1").value += "9";
 }
 function sua0ml(){
-    document.getElementById("litrosua1").value = "0";
+    document.getElementById("litrosua1").value += "0";
 }
 function suadelml(){
     document.getElementById("litrosua1").value = "";
@@ -665,7 +664,7 @@ function fun6(){
     let litros = document.querySelector("#litrodese").value;
 
     
-    document.querySelector("#pmostrar").innerHTML="desengrasante $"+ precio +" x "+litros;
+    document.querySelector("#pmostrar").innerHTML="DESENGRASANTE $"+ precio +" x "+litros+ "ml";
     
   
     document.getElementById("amigo").value = "desengrasante $"+ precio +" son "+ litros;
@@ -698,7 +697,7 @@ function fun61(){
     document.querySelector("#pmostrar").innerHTML="desengrasante "+ litros +"ml son $"+precio;
     
   
-    document.getElementById("amigo").value = "desengrasante $"+ precio +" son "+ litros;
+    document.getElementById("amigo").value = "DESENGRASANTE "+ litros+"ml son $"+ precio;
     document.getElementById("mensaje1").value = precio+" "+litros;
 }
 function dese500ml(){
